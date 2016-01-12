@@ -52,15 +52,11 @@ $(function() {
 
     // This is a test suite named "The menu"
     describe('The menu', function() {
-
-        // Access DOM to create variable for the menu-hidden class
-        var hiddenMenu = $('body').hasClass('menu-hidden');
-
         // This test ensures the menu element is hidden by default.
         // Analyze the HTML and CSS to determine how we're performing
         // the hiding/showing of the menu element.
         it('is hidden by default', function() {
-            expect(hiddenMenu).toBe(true);
+            expect($('body').hasClass('menu-hidden')).toBe(true);
         });
 
         // This test ensures the menu changes visibility when the menu
@@ -68,26 +64,12 @@ $(function() {
         // menu display when clicked and does it hide when clicked again.
         it('changes visibility when the menu icon is clicked', function() {
             // Show menu
-            $('menu-icon-link').click();
-            expect(hiddenMenu).toEqual(false);
+            $('.menu-icon-link').click();
+            expect($('body').hasClass('.menu-hidden')).toEqual(true);
             // Hide menu
-            $('menu-icon-link').click();
-            expect(hiddenMenu).toEqual(true);
+            $('.menu-icon-link').click();
+            expect($('body').hasClass('.menu-hidden')).toEqual(false);
         });
-
-/*
-        it('changes visibility when clicked', function(){
-            var menuIcon = $('.menu-icon-link');
-            menuIcon.click();
-            var menuHidden1 = $('body').hasClass('menu-hidden');
-            expect(menuHidden1).toBe(false);
-            menuIcon.click();
-            var menuHidden2 = $('body').hasClass('menu-hidden');
-            expect(menuHidden2).toBe(true);
-            expect(menuHidden1).not.toEqual(menuHidden2);
-        });
-*/
-
     });
 
     /* TODO: Write a new test suite named "Initial Entries" */
