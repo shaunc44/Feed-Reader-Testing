@@ -8,6 +8,8 @@
  * since some of these tests may require DOM elements. We want
  * to ensure they don't run until the DOM is ready.
  */
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+
 $(function() {
     /* This is our first test suite - a test suite just contains
     * a related set of tests. This suite is all about the RSS
@@ -19,16 +21,16 @@ $(function() {
          * empty. Experiment with this before you get started on
          * the rest of this project. What happens when you change
          * allFeeds in app.js to be an empty array and refresh the
-         * page?
+         * page? The test fails.
          */
         it('are defined', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a URL defined
-         * and that the URL is not empty.
+        /* This is a test that loops through each feed in the
+         * allFeeds object and ensures it has a URL defined and
+         * that the URL is not empty.
          */
         it('have defined URLs that are not empty', function() {
             for(var i = 0; i < allFeeds.length; i++) {
@@ -37,9 +39,8 @@ $(function() {
             }
         });
 
-        /* TODO: Write a test that loops through each feed
-         * in the allFeeds object and ensures it has a name defined
-         * and that the name is not empty.
+        /* This is a test that loops through each feed in the allFeeds
+         * object and ensures that name is defined and not empty.
          */
         it('have defined names that are not empty', function() {
             for(var i = 0; i < allFeeds.length; i++) {
@@ -49,23 +50,43 @@ $(function() {
         });
     });
 
-    /* TODO: Write a new test suite named "The menu" */
+    // This is a test suite named "The menu"
     describe('The menu', function() {
-        /* TODO: Write a test that ensures the menu element is
-         * hidden by default. You'll have to analyze the HTML and
-         * the CSS to determine how we're performing the
-         * hiding/showing of the menu element.
-         */
+
+        // Access DOM to create variable for the menu-hidden class
+        var hiddenMenu = $('body').hasClass('menu-hidden');
+
+        // This test ensures the menu element is hidden by default.
+        // Analyze the HTML and CSS to determine how we're performing
+        // the hiding/showing of the menu element.
         it('is hidden by default', function() {
-            var hiddenMenu = $('body').hasClass('menu-hidden');
             expect(hiddenMenu).toBe(true);
         });
 
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+        // This test ensures the menu changes visibility when the menu
+        // icon is clicked while testing two expectations: does the
+        // menu display when clicked and does it hide when clicked again.
+        it('changes visibility when the menu icon is clicked', function() {
+            // Show menu
+            $('menu-icon-link').click();
+            expect(hiddenMenu).toEqual(false);
+            // Hide menu
+            $('menu-icon-link').click();
+            expect(hiddenMenu).toEqual(true);
+        });
+
+/*
+        it('changes visibility when clicked', function(){
+            var menuIcon = $('.menu-icon-link');
+            menuIcon.click();
+            var menuHidden1 = $('body').hasClass('menu-hidden');
+            expect(menuHidden1).toBe(false);
+            menuIcon.click();
+            var menuHidden2 = $('body').hasClass('menu-hidden');
+            expect(menuHidden2).toBe(true);
+            expect(menuHidden1).not.toEqual(menuHidden2);
+        });
+*/
 
     });
 
