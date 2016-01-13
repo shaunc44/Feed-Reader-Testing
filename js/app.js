@@ -80,10 +80,10 @@ function loadFeed(id, cb) {
         },
         // Why callback when we have an error?
         error: function (result, status, err){
-                //run only the callback without attempting to parse result due to error
-                if (cb) {
-                    cb();
-                }
+            //run only the callback without attempting to parse result due to error
+            if (cb) {
+                cb();
+            }
         },
         dataType: "json"
     });
@@ -126,7 +126,7 @@ $(function() {
     feedList.on('click', 'a', function() {
         var item = $(this);
 
-        $('body').addClass('.menu-hidden');
+        $('body').addClass('menu-hidden');
         loadFeed(item.data('id'));
         return false;
     });
@@ -135,6 +135,6 @@ $(function() {
      * on the body to perform the hiding/showing of our menu.
      */
     menuIcon.on('click', function() {
-        $('body').toggleClass('.menu-hidden');
+        $('body').toggleClass('menu-hidden');
     });
 }());
