@@ -52,7 +52,7 @@ $(function() {
 
     // This is a test suite named "The menu"
     describe('The menu', function() {
-        // Create body variable to test functions
+        // Create body variable for it() functions
         var body = $('body');
         // This test ensures the menu element is hidden by default.
         // Analyze the HTML and CSS to determine how we're performing
@@ -92,31 +92,29 @@ $(function() {
         });
     });
 
-    // TODO: Write a new test suite named "New Feed Selection"
-
-/*
+    // This is a new test suite named "New Feed Selection"
     describe('New Feed Selection', function() {
-        // TODO: Write a test that ensures when a new feed is loaded
-        // by the loadFeed function that the content actually changes.
+        // This is a test that ensures when a new feed is loaded by
+        // the loadFeed function that the content actually changes.
         // Remember, loadFeed() is asynchronous.
-        //
+        var feed1,
+            feed2;
 
-
-
-
-
-
-
-
-
-
-
-        it('changes content when a new feed loads', function() {
-            expect()
-
+        beforeEach(function(done) {
+            // First Feed
+            loadFeed(0, function() {
+                feed1 = $('.feed').html();
+                // Second Feed
+                loadFeed(1, function() {
+                    feed2 = $('.feed').html();
+                    done();
+                });
+            });
         });
 
+        it('changes content when a new feed loads', function(done) {
+            expect(feed1).not.toEqual(feed2);
+            done();
+        });
     });
-*/
-
 }());
