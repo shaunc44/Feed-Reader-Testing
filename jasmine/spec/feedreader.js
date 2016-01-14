@@ -65,10 +65,10 @@ $(function() {
         // icon is clicked while testing two expectations: does the
         // menu display when clicked and does it hide when clicked again.
         it('changes visibility when the menu icon is clicked', function() {
-            // Hide menu
+            // Show menu
             $('.menu-icon-link').click();
             expect(body.hasClass('menu-hidden')).toBe(false);
-            // Show menu
+            // Hide menu
             $('.menu-icon-link').click();
             expect(body.hasClass('menu-hidden')).toBe(true);
         });
@@ -76,21 +76,18 @@ $(function() {
 
     // This is a test suite named "Initial Entries"
     describe('Initial Entries', function() {
-        /* TODO: Write a test that ensures when the loadFeed
-         * function is called and completes its work, there is at least
-         * a single .entry element within the .feed container.
-         * Remember, loadFeed() is asynchronous so this test will require
-         * the use of Jasmine's beforeEach and asynchronous done() function.
-         */
-
-        // After the first feed loadFeed in the array is done ...
+        // This is a test that ensures when the loadFeed function is
+        // called and completes its work, there is at least a single
+        // .entry element within the .feed container. loadFeed() is 
+        // asynchronous so this test will require the use of Jamine's
+        // beforeEach and asynchronous done() function.
         beforeEach(function(done) {
             loadFeed(0, done);
-        })
+        });
 
-        it('ensure feed container has at least one feed', function() {
+        it('ensure the feed container has at least one feed', function(done) {
             var entryCount = $('.entry').length;
-            expect(entryCount).not.toEqual(0);
+            expect(entryCount).toBeGreaterThan(0);
             done();
         });
     });
@@ -103,6 +100,10 @@ $(function() {
         // by the loadFeed function that the content actually changes.
         // Remember, loadFeed() is asynchronous.
         //
+
+
+
+
 
 
 
