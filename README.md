@@ -11,27 +11,39 @@ TESTS OVERVIEW
 	if they have URLs and names.
 2)	The next set of tests examine whether the menu changes
 	visiblity when clicked.
-3)	The last tests ensure that the container has at least one
-	feed and also confirms that new feeds are loaded.
+3)	Lastly, I test that the container has at least one feed and
+	also confirms that new feeds are loaded.
 
 
-INSTRUCTIONS
+TEST INSTRUCTIONS
 =================================================================
 RSS FEEDS:
-	Comment out the 'allFeeds' array in app.js. This will cause
-	the test to fail and will say "RSS Feeds are not defined".
-	
-
-SEARCH FUNCTION:
-	Enter a word or some text in the search box. The search 
-	function will filter the list based on the text you entered.
-THE LIST: 
-	Click any venue in the list. Information from Foursquare will
-	pop up.
-MAP & MARKERS:
-	Click any of the markers and a Foursquare infowindow will 
-	pop up. Click the X in the upper-right corner of the 
-	infowindow to close the window.
+	Test 1:	Comment out the 'allFeeds' array in app.js. This will
+			cause the test to fail while prompting the error 
+			message "Expected 0 not to be 0".
+	Test 2:	Empty one of the URLs in the 'allFeeds' array in
+			app.js. The test will fail with an error message of
+			"Expected 0 not to be 0".
+	Test 3:	Empty one of the names in the 'allFeeds' array in
+			app.js. The test will fail with an error message of
+			"Expected 0 not to be 0".
+THE MENU:
+	Test 4:	In the index.html file delete the menu-hidden class.
+			In the webpage, the menu will not be hidden by
+			default and you will see an error message of
+			"Expected false to be true".
+	Test 5:	In the index.html file delete the menu-icon-link
+			class. In the webpage, the menu will not toggle
+			open or close and you will see an error message of
+			"Expected true to be false".
+INITIAL ENTRIES: 
+	Test 6:	Empty one of the names in the 'allFeeds' array in
+			app.js. The test will fail with an error message of
+			"Expected 0 not to be 0".
+NEW FEED SELECTION:
+	Test 7:	Empty one of the names in the 'allFeeds' array in
+			app.js. The test will fail with an error message of
+			"Expected 0 not to be 0".
 
 
 INSTALLATION
@@ -43,5 +55,5 @@ out the live website. Cheers!
 
 SUPPORT
 =================================================================
-If you're having issues loading the website please email 
-Shaun at shauncox44@gmail.com
+If you're having issues loading the website please email Shaun
+at shauncox44@gmail.com
