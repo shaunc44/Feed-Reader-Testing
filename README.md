@@ -5,7 +5,7 @@ ascertain the functionality of various aspects of the feed reader
 webpage.
 
 
-TESTS OVERVIEW
+OVERVIEW OF TESTS
 =================================================================
 1)	The first tests determine whether the feeds are defined and
 	if they have URLs and names.
@@ -36,14 +36,15 @@ THE MENU:
 			class. In the webpage, the menu will not toggle
 			open or close and you will see an error message of
 			"Expected true to be false".
-INITIAL ENTRIES: 
-	Test 6:	Empty one of the names in the 'allFeeds' array in
-			app.js. The test will fail with an error message of
-			"Expected 0 not to be 0".
+INITIAL ENTRIES:
+	Test 6:	Delete the 'entry' class in index.html. The test
+			will fail with an error message of "Expected 0 to
+			be greater than 0".
 NEW FEED SELECTION:
-	Test 7:	Empty one of the names in the 'allFeeds' array in
-			app.js. The test will fail with an error message of
-			"Expected 0 not to be 0".
+	Test 7:	For the last test please go app.js and comment out
+			the content of the loadFeed() function which will
+			cause the New Feed Selection test to fail with an
+			error message of "Error: Timeout".
 
 
 INSTALLATION

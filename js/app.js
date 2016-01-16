@@ -6,9 +6,10 @@
  * jQuery.
  */
 
-// The names and URLs to all of the feeds we'd like available.
-// When allFeeds is zero this is the error msg:
-// -- Expected 0 not to be 0.
+/* The names and URLs to all of the feeds we'd like available.
+ * When allFeeds is zero this is the error msg:
+ * -- Expected 0 not to be 0.
+ */
 var allFeeds = [
     {
         name: 'Udacity Blog',
