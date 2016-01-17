@@ -14,7 +14,7 @@ webpage.
 2.	The next set of tests examine whether the menu changes
 	visiblity when clicked.
 3.	Lastly, I test that the container has at least one feed and
-	also confirms that new feeds are loaded.
+	also confirm that new feeds are loaded.
 
 
 ###TEST INSTRUCTIONS
@@ -22,19 +22,19 @@ webpage.
 #####RSS FEEDS:
 	Test 1:	Comment out the 'allFeeds' array in app.js. This will
 			cause the test to fail while prompting the error 
-			message "Expected 0 not to be 0".
+			message, "Expected 0 not to be 0".
 	Test 2:	Empty one of the URLs in the 'allFeeds' array in
 			app.js. The test will fail with an error message of
 			"Expected 0 not to be 0".
-	Test 3:	Empty one of the names in the 'allFeeds' array in
-			app.js. The test will fail with an error message of
+	Test 3:	This time empty one of the names in the 'allFeeds' array
+			in app.js. The test will fail with an error message of
 			"Expected 0 not to be 0".
 #####THE MENU:
-	Test 4:	In the index.html file delete the menu-hidden class.
+	Test 4:	In the index.html file, delete the menu-hidden class.
 			In the webpage, the menu will not be hidden by
 			default and you will see an error message of
 			"Expected false to be true".
-	Test 5:	In the index.html file delete the menu-icon-link
+	Test 5:	In the index.html file, delete the menu-icon-link
 			class. In the webpage, the menu will not toggle
 			open or close and you will see an error message of
 			"Expected true to be false".
@@ -43,7 +43,7 @@ webpage.
 			will fail with an error message of "Expected 0 to
 			be greater than 0".
 #####NEW FEED SELECTION:
-	Test 7:	For the last test please go app.js and comment out
+	Test 7:	For the last test, please go app.js and comment out
 			the content of the loadFeed() function which will
 			cause the New Feed Selection test to fail with an
 			error message of "Error: Timeout".
