@@ -9,11 +9,11 @@ webpage.
 
 ###OVERVIEW OF TESTS
 -----------------------------------------------------------------
-1)	The first tests determine whether the feeds are defined and
+1.	The first tests determine whether the feeds are defined and
 	if they have URLs and names.
-2)	The next set of tests examine whether the menu changes
+2.	The next set of tests examine whether the menu changes
 	visiblity when clicked.
-3)	Lastly, I test that the container has at least one feed and
+3.	Lastly, I test that the container has at least one feed and
 	also confirms that new feeds are loaded.
 
 
