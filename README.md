@@ -1,6 +1,6 @@
 ##PROJECT 6 - FEED READER TESTING
-####UDACITY - FRONT-END NANODEGREE
---------------------____________________________
+####UDACITY - FRONT-END WEB DEVELOPER NANODEGREE
+=================================================================
 This project entailed writing multiple tests using jasmine.js to
 ascertain the functionality of various aspects of the feed reader
 webpage.
@@ -50,9 +50,9 @@ webpage.
 
 ###INSTALLATION
 =================================================================
-Open index.html in your web browser, such as FireFox or Chrome, 
-or you can visit shaunc44.github.io/Feed-Reader-Testing/ to check 
-out the live website. Cheers!
+Open index.html in your favorite web browser, such as Chrome or
+Firefox, or you can visit the live [website.]
+(shaunc44.github.io/Feed-Reader-Testing/) Cheers!
 
 
 ###SUPPORT
