@@ -7,7 +7,7 @@ webpage.
 
 
 ###OVERVIEW OF TESTS
-=================================================================
+-----------------------------------------------------------------
 1)	The first tests determine whether the feeds are defined and
 	if they have URLs and names.
 2)	The next set of tests examine whether the menu changes
@@ -17,7 +17,7 @@ webpage.
 
 
 ###TEST INSTRUCTIONS
-=================================================================
+_________________________________________________________________
 ####RSS FEEDS:
 	Test 1:	Comment out the 'allFeeds' array in app.js. This will
 			cause the test to fail while prompting the error 
@@ -51,7 +51,7 @@ webpage.
 ###INSTALLATION
 =================================================================
 Open index.html in your favorite web browser, such as Chrome or
-Firefox, or you can visit the live [website.]
+Firefox, or visit the live [website.]
 (shaunc44.github.io/Feed-Reader-Testing/) Cheers!
 
 
