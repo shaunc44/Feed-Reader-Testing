@@ -1,5 +1,5 @@
 ##PROJECT 6 - FEED READER TESTING
-####UDACITY - FRONT-END WEB DEVELOPER NANODEGREE
+####UDACITY - *FRONT-END WEB DEVELOPER NANODEGREE*
 This project entailed writing multiple tests using jasmine.js to
 ascertain the functionality of various aspects of the feed reader
 webpage.
