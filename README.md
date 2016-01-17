@@ -1,11 +1,12 @@
-##UDACITY - FRONT-END NANODEGREE - PROJECT 6 - FEED READER TESTING
+##UDACITY - FRONT-END NANODEGREE
+###PROJECT 6 - FEED READER TESTING
 =================================================================
 This project entailed writing multiple tests using jasmine.js to
 ascertain the functionality of various aspects of the feed reader
 webpage.
 
 
-OVERVIEW OF TESTS
+###OVERVIEW OF TESTS
 =================================================================
 1)	The first tests determine whether the feeds are defined and
 	if they have URLs and names.
@@ -15,7 +16,7 @@ OVERVIEW OF TESTS
 	also confirms that new feeds are loaded.
 
 
-TEST INSTRUCTIONS
+###TEST INSTRUCTIONS
 =================================================================
 RSS FEEDS:
 	Test 1:	Comment out the 'allFeeds' array in app.js. This will
@@ -47,14 +48,14 @@ NEW FEED SELECTION:
 			error message of "Error: Timeout".
 
 
-INSTALLATION
+###INSTALLATION
 =================================================================
 Open index.html in your web browser, such as FireFox or Chrome, 
 or you can visit shaunc44.github.io/Feed-Reader-Testing/ to check 
 out the live website. Cheers!
 
 
-SUPPORT
+###SUPPORT
 =================================================================
 If you're having issues loading the website please email Shaun
 at shauncox44@gmail.com
