@@ -1,6 +1,6 @@
 ##PROJECT 6 - FEED READER TESTING
 ####UDACITY - FRONT-END NANODEGREE
-=================================================================
+-----------------------------------------------------------------
 This project entailed writing multiple tests using jasmine.js to
 ascertain the functionality of various aspects of the feed reader
 webpage.
@@ -18,7 +18,7 @@ webpage.
 
 ###TEST INSTRUCTIONS
 =================================================================
-RSS FEEDS:
+####RSS FEEDS:
 	Test 1:	Comment out the 'allFeeds' array in app.js. This will
 			cause the test to fail while prompting the error 
 			message "Expected 0 not to be 0".
@@ -28,7 +28,7 @@ RSS FEEDS:
 	Test 3:	Empty one of the names in the 'allFeeds' array in
 			app.js. The test will fail with an error message of
 			"Expected 0 not to be 0".
-THE MENU:
+####THE MENU:
 	Test 4:	In the index.html file delete the menu-hidden class.
 			In the webpage, the menu will not be hidden by
 			default and you will see an error message of
@@ -37,11 +37,11 @@ THE MENU:
 			class. In the webpage, the menu will not toggle
 			open or close and you will see an error message of
 			"Expected true to be false".
-INITIAL ENTRIES:
+####INITIAL ENTRIES:
 	Test 6:	Delete the 'entry' class in index.html. The test
 			will fail with an error message of "Expected 0 to
 			be greater than 0".
-NEW FEED SELECTION:
+####NEW FEED SELECTION:
 	Test 7:	For the last test please go app.js and comment out
 			the content of the loadFeed() function which will
 			cause the New Feed Selection test to fail with an
